@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    height:200px;
+    
+}
+h1{
+    background-color: pink;
+}
+#one{
+    background-color: green;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    box-sizing: border-box;
+}
+#two{
+    background-color: blue;
+    border-color: black;
+    border-width: 2px;
+    border-style: dotted;
+}
+#three{
+    background-color: magenta;
+    border: darkgrey 4px dashed;
+    border-radius: 15%;
+}
