@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    background-color: #FFD23F;
+}
+#title{
+    text-align: center;
+    color: #540D6E;
+}
+img{
+    max-width: 50%;
+    height:auto;
+    border: 1px solid ;
+    border-radius: 40%;
+    justify-content: center;
+}
+ul{
+    font-size: 110%;
+    justify-content: center;
+    color: #540D6E;
+    border-top: 3px solid #0EAD69;
+    padding-top:5%;
+}
