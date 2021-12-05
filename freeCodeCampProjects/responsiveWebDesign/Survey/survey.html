@@ -14,7 +14,7 @@
         <div id="nav">
             <h1 id="title">Harry Potter Fan Sign-Up</h1>
         </div>
-        <div id=nav-descript>
+        <div id="nav-descript">
             <p id="description">Thanks for taking the time to fill out this short survey!</p>
         </div>
 
@@ -23,52 +23,68 @@
         <img src="https://static.wikia.nocookie.net/harrypotter/images/a/ae/Hogwartscrest.png/revision/latest/scale-to-width-down/350?cb=20110806202805"
             alt="Hogwarts Crest">
     </div>
-    <div id="survey">
-        <form id="survey-form">
-            <div id="name">
-                <label for="fName" id="name">First Name: </label>
-                <input type="text">
-                <label for="lName">Last Name: </label>
-                <input type="text">
-            </div>
-            <div id="email">
-                <label for="email">Email: </label>
-                <input type="email" name="" id="email">
-            </div>
-            <div id="houseSelector">
-                <p>Please select your house:
-                    <label for="ravenclaw">Ravenclaw</label>
-                    <input type="radio" name="house" id="ravenclaw">
-                    <label for="hufflepuff">Hufflepuff</label>
-                    <input type="radio" name="house" id="hufflepuff">
-                    <label for="gryffindor">Gryffindor</label>
-                    <input type="radio" name="house" id="gryffindor">
-                    <label for="Slytherin">Slytherin</label>
-                    <input type="radio" name="house" id="slytherin" checked>
-                </p>
-            </div>
-            <div id="bookSelection">
-                <label for="bookSelection">How many of the books have you read?</label>
-                <input type="number" name="books" id="books" required>
-            </div>
-            <div id="favoriteMovie">
-                <label for="favoriteMovie"></label>
-                <select name="favoriteMove" id="favoriteMovie">
-                    <option value="1">Harry Potter and the Sorcerer’s Stone</option>
-                    <option value="2">Harry Potter and the Chamber of Secrets</option>
-                    <option value="3">Harry Potter and the Prisoner of Azkaban</option>
-                    <option value="4">Harry Potter and the Goblet of Fire</option>
-                    <option value="5">Harry Potter and the Order of Phoenix</option>
-                    <option value="6">Harry Potter and the Half-Blood Prince</option>
-                    <option value="7">Harry Potter and the Deathly Hallows - Part 1</option>
-                    <option value="8">Harry Potter and the Deathly Hallows - Part 2</option>
-                </select>
-            </div>
-            <div id="button">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+
+    <form id="survey-form">
+        <div id="nameForm">
+            <label for="fName" id="name-label">First Name: </label>
+            <input type="text" id="name" required placeholder="First Name">
+            <label for="lName">Last Name: </label>
+            <input type="text" required>
+        </div>
+
+        <div id="emailForm">
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" id="email" required placeholder="Email:">
+        </div>
+        <div id="houseSelector">
+            <p>Please select your house:
+                <label for="ravenclaw">Ravenclaw</label>
+                <input type="radio" name="house" id="ravenclaw" value="ravenclaw">
+                <label for="hufflepuff">Hufflepuff</label>
+                <input type="radio" name="house" id="hufflepuff" value="hufflepuff">
+                <label for="gryffindor">Gryffindor</label>
+                <input type="radio" name="house" id="gryffindor" value="gryffindor">
+                <label for="Slytherin">Slytherin</label>
+                <input type="radio" name="house" id="slytherin" checked value="slytherin">
+            </p>
+        </div>
+        <div id="numberForm">
+            <label for="bookSelection" id="number-label">How many of the books have you read?</label>
+            <input type="number" name="books" id="number" min="0" max="10" required placeholder="number of books read">
+        </div>
+        <div id="favoriteMovie">
+            <label for="favoriteMovie"></label>
+            <select name="favoriteMove" id="dropdown">
+                <option value="1">Harry Potter and the Sorcerer’s Stone</option>
+                <option value="2">Harry Potter and the Chamber of Secrets</option>
+                <option value="3">Harry Potter and the Prisoner of Azkaban</option>
+                <option value="4">Harry Potter and the Goblet of Fire</option>
+                <option value="5">Harry Potter and the Order of Phoenix</option>
+                <option value="6">Harry Potter and the Half-Blood Prince</option>
+                <option value="7">Harry Potter and the Deathly Hallows - Part 1</option>
+                <option value="8">Harry Potter and the Deathly Hallows - Part 2</option>
+            </select>
+        </div>
+        <div id="checkboxes">
+            <label for="title" id="titleLabel"> Plese select your favorite Hogwarts subject</label>
+            <input type="checkbox" id="potions" value="potions">
+            <label for="potions" id="potionsLabel">Potions</label>
+            <input type="checkbox" id="astronomy" value="astronomy">
+            <label for="checkboxes" id="astronomyLabel">Astronomy</label>
+            <input type="checkbox" id="charms" value="charms">
+            <label for="checkboxes" id="charmsLabel">Charms</label>
+        </div>
+
+        <div id="text-area">
+
+            <textarea id="feedback" name="textArea" rows="5"
+                cols="33">If you have anything you'd like us to add please let us know!</textarea>
+        </div>
+        <div id="button">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+
 
 </body>
 
