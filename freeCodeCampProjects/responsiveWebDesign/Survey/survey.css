@@ -1,0 +1,16 @@
+body{
+    background-color: #AAAAAA;
+    
+}
+div{
+    display: flex;
+    justify-content: center;
+    color: #1A482B;
+}
+#nav-descript{
+    margin-bottom: 4em;
+}
+#email{
+    padding-right: 7.5em;
+}
+
