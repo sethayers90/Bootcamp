@@ -1,0 +1,32 @@
+body {
+    background-color: #315C2B;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    background-color: #60712F;
+    color: #9EA93F;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-transform: uppercase;
+}
